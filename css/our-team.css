@@ -1,0 +1,441 @@
+.our-team-nav {
+  color: var(--text-primary);
+}
+
+main {
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+.header-img {
+  height: auto;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+main .details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.details p {
+  text-align: center;
+
+}
+
+
+/* employees navigagtion */
+
+.tabs {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.tab-header {
+  display: flex;
+  background-color: var(--bg-primary);
+}
+
+.tab-link {
+  flex: 1;
+  padding: 10px 20px;
+  border: none;
+  background: none;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
+
+.tab-link.active {
+  background-color: var(--bg-secondary);
+  color: white;
+}
+
+.tab-content {
+  border: 1px solid #ddd;
+  padding: 20px;
+  background: #fff;
+}
+
+/* Modificări pentru layout cu imagine și text */
+.tab-panel {
+  display: none;
+  /* Doar tab-ul activ va fi afișat */
+  flex-wrap: wrap;
+  /* Permite împachetarea conținutului */
+  gap: 20px;
+  /* Spațiu între imagine și text */
+  align-items: flex-start;
+  /* Conținutul este aliniat sus */
+}
+
+.tab-panel.active {
+  display: flex;
+  /* Afișează doar tab-ul activ într-un layout pe orizontală */
+}
+
+/* Stil pentru imagine */
+.tab-panel img {
+  max-width: 200px;
+  /* Lățimea maximă a imaginii */
+  height: auto;
+  /* Menține proporțiile */
+  border-radius: 10px;
+  /* Colțuri rotunjite */
+}
+
+/* Stil pentru text */
+.tab-panel div {
+  flex: 1;
+  /* Textul ocupă spațiul rămas */
+}
+
+.tab-panel p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Stil pentru buton */
+.tab-panel .apply-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: var(--bg-secondary);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.tab-panel .apply-btn:hover {
+  background-color: var(--bg-primary);
+  /* Schimbă nuanța la hover */
+}
+
+.tab-padding {
+  padding-bottom: 55px;
+}
+
+
+/* Video scrtion */
+
+.custom-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: var(--bg-primary);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.custom-text {
+  flex: 1 1 50%;
+  padding: 20px;
+  color: var(--bg-secondary);
+}
+
+.custom-text h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.custom-text p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.custom-video {
+  flex: 1 1 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.custom-video iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 8px;
+}
+
+.custom-caption {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+/* Our values section */
+
+.our-values {
+  text-align: center;
+  background-color: var(--bg-grey);
+  width: 100%;
+  padding: 60px;
+  margin: 20px 0;
+}
+
+.our-values h2 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.our-values p {
+  margin-bottom: 40px;
+}
+
+/* Structura liniei */
+.our-values-1,
+.our-values-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  /* Spațiere între itemi */
+  margin-bottom: 30px;
+}
+
+/* Fiecare valoare individuală */
+.value-item {
+  text-align: center;
+  flex: 1;
+  /* Toate valorile au aceeași lățime */
+}
+
+.value-item img {
+  width: 100px;
+  /* Ajustează dimensiunea imaginilor */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.value-item h3 {
+  margin: 10px 0 5px 0;
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.value-item p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.apply-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: var(--bg-secondary);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.apply-btn:hover {
+  background-color: var(--bg-primary);
+}
+
+/* FQA section */
+
+.FAQ-section {
+  padding: 5% 15%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+  background-color: var(--bg-primary);
+
+}
+
+.FQA-title {
+  text-align: center;
+}
+
+.FQA-subtitle {
+  text-align: center;
+}
+
+.accordion-item {
+  background-color: var(--text-primary);
+  border-bottom: 2px solid black !important; /* Forțează aplicarea bordurii */
+}
+
+.accordion-item:last-child {
+  border-bottom: 2px solid black !important; /* Asigură bordura ultimului element */
+}
+
+.accordion-button {
+  background-color: var(--bg-primary);
+}
+
+
+
+@media (max-width: 768px) {
+  /* Main content container */
+  main {
+    margin-right: 5%; /* Reduce marginile laterale */
+    margin-left: 5%; /* Reduce marginile laterale */
+  }
+
+  /* Header image */
+  .header-img {
+    width: 100%; /* Face imaginea să ocupe întreaga lățime */
+    margin-top: 120px; /* Ajustează marginea de sus */
+  }
+
+  /* Align content and make the text flexible */
+  .details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  /* Text centrat în secțiunea de detalii */
+  .details p {
+    text-align: center;
+    font-size: 16px; /* Micșorează textul pentru a se potrivi pe ecrane mici */
+    margin-bottom: 15px;
+  }
+
+  /* Tabs */
+  .tab-header {
+    display: flex;
+    flex-wrap: wrap; /* Permite taburile să se plaseze pe mai multe linii */
+    justify-content: space-around; /* Aliniază taburile pe linie */
+  }
+
+  /* Butoane tab */
+  .tab-link {
+    flex: 1 1 100%; /* Fiecare buton ocupă toată lățimea pe mobil */
+    padding: 10px;
+    text-align: center;
+    font-size: 14px; /* Ajustează fontul pe mobil */
+  }
+
+  /* Panouri de tab */
+  .tab-panel {
+    display: none; /* Ascunde panourile implicite */
+    flex-direction: column; /* Coloană pe mobil */
+    gap: 10px;
+  }
+
+  /* Panou activ */
+  .tab-panel.active {
+    display: flex; /* Afișează doar tab-ul activ */
+  }
+
+  /* Imaginea din tab */
+  .tab-panel img {
+    width: 100%;
+    max-width: 200px; /* Micșorează imaginea pentru a se potrivi */
+    height: auto;
+
+  }
+  /* Custom Wrapper pentru video */
+  .custom-wrapper {
+    display: flex;
+    flex-direction: column; /* Aranjament pe coloană pe mobil */
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .custom-text, .custom-video {
+    flex: 1 1 100%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  /* Ajustează stilul iframe pentru video */
+  .custom-video iframe {
+    width: 100%;
+    height: 200px; /* Micșorează înălțimea pe mobil */
+  }
+
+  .custom-caption {
+    font-size: 12px; /* Micșorează textul */
+  }
+
+  /* Our Values - Flex Layout */
+  .our-values {
+    padding: 40px;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .our-values h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .our-values p {
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+
+  .our-values-1, .our-values-2 {
+    display: flex;
+    flex-direction: column; /* Fiecare valoare pe o linie */
+    align-items: center;
+    gap: 20px;
+  }
+
+  .value-item {
+    text-align: center;
+    flex: 1;
+  }
+
+  .value-item img {
+    width: 80px; /* Ajustează dimensiunea imaginilor */
+  }
+
+  .value-item h3 {
+    font-size: 1.1rem;
+  }
+
+  /* FAQ Section */
+  .FAQ-section {
+    padding: 5% 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .FQA-title, .FQA-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .accordion-item {
+    background-color: var(--text-primary);
+    border-bottom: 2px solid black;
+  }
+
+  .accordion-item:last-child {
+    border-bottom: 2px solid black;
+  }
+
+  .accordion-button {
+    background-color: var(--bg-primary);
+  }
+
+  .another-main main {
+    margin-top: 10px !important;
+  }
+  
+}

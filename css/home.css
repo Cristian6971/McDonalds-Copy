@@ -1,0 +1,143 @@
+/* Carousel */
+
+#carouselExample {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+/* Cards section */
+
+.Cards-gird {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Două coloane pe ecrane mari */
+    gap: 10px;
+    width: 100%;
+}
+
+.Cards-gird .card-1,
+.Cards-gird .card-2,
+.Cards-gird .card-3,
+.Cards-gird .card-4 {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Asigură încărcarea corectă a imaginii */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-light);
+}
+
+/* Imagini de fundal pentru carduri */
+.Cards-gird .card-1 {
+    background-image: url('https://www.mcdonalds.ro/sites/default/files/styles/scale_992/public/field_homeblock_imghd/2023-03/MicrosoftTeams-image%20%2859%29.png?itok=T4OMu-jR');
+}
+
+.Cards-gird .card-2 {
+    background-image: url('https://www.mcdonalds.ro/sites/default/files/styles/scale_992/public/field_homeblock_imghd/2022-04/Untitled%20design%20%281%29_0.png?itok=qIYDwglJ');
+}
+
+.Cards-gird .card-3 {
+    background-image: url('https://mcdonalds.ro/sites/default/files/styles/scale_992/public/field_homeblock_imghd/2023-03/991x500_0.jpg?itok=NaaJVhkB');
+}
+
+.Cards-gird .card-4 {
+    background-image: url('https://mcdonalds.ro/sites/default/files/styles/scale_992/public/field_homeblock_imghd/2022-03/4_991x500.jpg?itok=KkcmXG64');
+}
+
+.Cards-gird .card-text {
+    color: var(--text-light);
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Cards-gird a {
+    color: var(--text-dark);
+    background-color: var(--bg-primary);
+    font-size: var(--fs-small); /* Font mai mic pentru telefoane */
+    text-transform: uppercase;
+    text-align: center;
+    padding: var(--spacing-small);
+    border: 2px solid var(--button-color);
+    border-radius: 5px;
+    width: 150px; /* Dimensiune redusă a butonului */
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+.Cards-gird h2 {
+    font-weight: 600;
+}
+
+.Cards-gird .card-2 a:hover,
+.Cards-gird .card-3 a:hover,
+.Cards-gird .card-4 a:hover{
+    color: var(--text-secondary);
+}
+
+.Cards-gird .card-text a{
+    font-size: 15px;
+}
+.Cards-gird .card-text p{
+    font-size: 20px;
+}
+.Cards-gird .card-text h2 {
+    font-size: 35px;
+}
+
+/* Responsive Design pentru telefon */
+
+@media (max-width: 768px) {
+    main {
+        margin: 0;
+    }
+    
+    .Cards-gird {
+        grid-template-columns: 1fr; /* O coloană pentru telefoane */
+    }
+
+    .Cards-gird .card-1 {
+        text-align: center;
+    }
+    
+    .Cards-gird .card-1,
+    .Cards-gird .card-2,
+    .Cards-gird .card-3,
+    .Cards-gird .card-4 {
+        height: 250px; /* Înălțime mai mică pentru telefon */
+        background-size: contain; /* Asigură redimensionarea completă a imaginii */
+    }
+
+    .Cards-gird a {
+        width: 100%; /* Butonul ocupă întreaga lățime */
+        padding: var(--spacing-small);
+        font-size: var(--fs-small); /* Font mai mic */
+    }
+}
+
+@media (max-width: 480px) {
+    #carouselExample {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .Cards-gird .card-1 {
+        text-align: center;
+    }
+    
+    .Cards-gird .card-1,
+    .Cards-gird .card-2,
+    .Cards-gird .card-3,
+    .Cards-gird .card-4 {
+        height: 200px; /* Dimensiune mai mică pentru ecrane foarte mici */
+        background-size: contain; /* Păstrează întreaga imagine vizibilă */
+    }
+    
+    .Cards-gird a {
+        font-size: 0.75rem; /* Font foarte mic pentru ecrane foarte mici */
+    }
+}

@@ -1,0 +1,135 @@
+.our-team-nav {
+    color: var(--text-primary);
+}
+
+/* Imaginea din header */
+.header-img {
+    height: auto;
+    width: 100%; /* Asigură lățime completă */
+    margin: 50px auto 50px; /* Ajustează marginile pentru mobil */
+    display: block;
+}
+
+/* Stil pentru textul din header */
+.header-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.header-p p {
+    font-weight: 900;
+    font-size: 14px; /* Dimensiune rezonabilă pentru text */
+    margin: 5px 10px;
+}
+
+/* Conținut general */
+.main-content {
+    display: flex;
+    flex-direction: column; /* Aranjează elementele pe verticală */
+    align-items: center;
+    padding: 20px;
+}
+
+/* Formular */
+.form-container {
+    background-color: var(--bg-primary);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%; /* Lățime adaptivă */
+    max-width: 500px; /* Limitează lățimea pe ecrane mai mari */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 20px auto; /* Centrează formularul */
+}
+
+/* Elemente din formular */
+form {
+    display: flex;
+    flex-direction: column; /* Elemente verticale */
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box; /* Include padding în dimensiunea totală */
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--bg-secondary);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #134629;
+}
+
+/* Media queries pentru dispozitive mai mici */
+@media screen and (max-width: 768px) {
+    /* Header */
+    .header-p p {
+        font-size: 13px; /* Text mai mic pentru tablete */
+    }
+
+    /* Formular */
+    .form-container {
+        padding: 15px; /* Reduc padding-ul */
+        width: 95%; /* Lățime mai adaptată */
+    }
+
+    input, select, button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .header-img {
+        margin-top: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Header */
+    .header-p p {
+        font-size: 12px; /* Font mai mic pentru telefoane mici */
+    }
+
+    /* Formular */
+    .form-container {
+        padding: 10px; /* Reduce padding pentru ecrane foarte mici */
+    }
+
+    input, select, button {
+        font-size: 12px; /* Fonturi mai mici */
+        padding: 8px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    .header-img {
+        margin-top: auto;
+    }
+}

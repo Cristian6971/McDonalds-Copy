@@ -1,0 +1,100 @@
+/* Setează box-sizing pentru toate elementele */
+* {
+    box-sizing: border-box;
+}
+
+/* Secțiunea Header */
+.header-section {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 150px;
+    width: 100%; /* Asigură-te că secțiunea nu depășește lățimea ecranului */
+    overflow: hidden; /* Evită depășirea elementelor din container */
+}
+
+/* Detalii titlu */
+.title-details {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center; /* Asigură-te că titlurile sunt centrate pe ecrane mici */
+    width: 40%; /* Asigură-te că ocupă toată lățimea containerului */
+}
+
+.title-details h1 {
+    font-weight: 900;
+    font-size: 3rem; /* Ajustează dimensiunea pentru dispozitivele mici */
+    margin: 0; /* Elimină marginile pentru a preveni ieșirea */
+}
+
+.title-details p {
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
+    margin-top: 10px;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0; /* Elimină marginile pentru a preveni ieșirea */
+}
+
+/* Secțiunea Ingrediente */
+.ingredients-comtainer {
+    background-color: var(--bg-grey);
+    padding: 50px;
+    width: 100%; /* Asigură-te că secțiunea nu depășește lățimea ecranului */
+    overflow: hidden; /* Previne ieșirea conținutului din container */
+}
+
+.ingredients {
+    width: 50%;
+    padding-left: 15%;
+}
+
+/* Stil pentru titlul ingredientelor */
+.ingredients h3 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+/* Media Query pentru telefoane - Responsive Design */
+@media (max-width: 768px) {
+    /* Header */
+    .header-section {
+        flex-direction: column; /* Afișează elementele pe verticală pe ecrane mici */
+        margin-top: 100px; /* Ajustează marginea de sus pentru a face mai mult spațiu */
+    }
+
+    /* Detalii titlu */
+    .title-details h1 {
+        font-size: 2.5rem; /* Diminuează dimensiunea titlului pentru telefoane */
+    }
+
+    .title-details p {
+        font-size: 16px; /* Micșorează dimensiunea textului pentru a fi mai lizibil */
+        white-space: normal; /* Permite textului să se împartă pe mai multe linii */
+        overflow: visible; /* Permite textului să fie vizibil complet */
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    /* Ingrediente */
+    .ingredients-comtainer {
+        padding: 20px; /* Reducem padding-ul pentru a economisi spațiu */
+    }
+
+    .ingredients {
+        width: 100%; /* Ingrediente vor ocupa întreaga lățime pe telefoane */
+        padding-left: 0; /* Eliminăm padding-ul stâng pentru a folosi întreg spațiul */
+    }
+
+    .ingredients h3 {
+        font-size: 25px; /* Micșorăm dimensiunea fontului pentru ingredientele listate pe telefoane */
+        margin-bottom: 15px;
+    }
+}
+

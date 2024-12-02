@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Adaugam meta pt google -->
+    <meta name="description" content="O replica a site-ului McDonalds" />
+    <!-- Includem font-urile pt prima oare -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Copie McDonalds</title>
+    <!-- Adaugam bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Adaugam stilurile css -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/our-team.css" />
+      <!-- fav-icon -->
+  <link rel="icon" type="image/x-icon" href="../fav.icon/mc-donalds-fav-icon.png">
+</head>
+
+<body>
+
+    <!-- Navigatie -->
+    <section class="navigation">
+        <nav>
+          <div class="navigation">
+            <a href="../index.html" class="logo-link">
+              <img src="../img/logo-mcdonalts.webp" alt="McDonald's Logo">
+            </a>
+            <div class="hamburger" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Menu</a>
+                <ul class="dropdown-menu">
+                  <li><a href="../menu-items/chicken.html">Chicken</a></li>
+                  <li><a href="../menu-items/beef.html">Beef</a></li>
+                  <li><a href="../menu-items/pork.html">Pork</a></li>
+                  <li><a href="../menu-items/vegetarian.html">Vegetarian</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="../nav-items/our-team.html">Come to our team</a>
+              </li>
+              <li>
+                <a href="../nav-items/mccafe.html">McCafé®</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </section>
+      
+
+
+    <!-- Header image section -->
+    <section>
+        <img src="../our-team-img/Header Desktop.webp" class="header-img">
+    </section>
+
+
+
+    <div class="another-main">
+    <main>
+        <!-- Secțiunea detalii existente -->
+        <div class="details">
+            <h3>Why choose a job at McDonald's®?</h3>
+            <p>If you work in one of the McDonald's® restaurants, you enjoy the support you need, motivating salary,
+                training and bonuses. Moreover, a job with us leaves you time for your dream, no matter what it is. Find
+                out which role is right for you and apply for a position at your nearest McDonald's® restaurant.</p>
+        </div>
+
+
+
+
+        <div class="tabs">
+            <div class="tab-header">
+                <button class="tab-link active" data-tab="crew">CREW</button>
+                <button class="tab-link" data-tab="manager">MANAGER TRAINEE</button>
+                <button class="tab-link" data-tab="barista">BARISTA</button>
+                <button class="tab-link" data-tab="hospitality">HOSPITALITY MANAGER</button>
+            </div>
+            <div class="tab-content">
+                <!-- Tab 1: Crew -->
+                <div class="tab-panel active" id="crew">
+                    <img src="../our-team-img/Crew.our-team.webp" alt="Crew Image">
+                    <div>
+                        <p>Are you an energetic person, willing to accept new challenges and who wants to work alongside
+                            a dynamic team? Are you still a student and want to gain professional experience? Apply for
+                            the position of Crew Member and let's meet all the colleagues for whom the job at
+                            McDonald's® suits them!</p>
+                        <p>As a Commercial Worker, you will handle a variety of activities that include all areas of a
+                            McDonald's® restaurant: kitchen, cash register and dining room..</p>
+                        <p>Thus, you have the chance to develop your set of practical skills, but also your
+                            communication skills, following the interaction with customers.</p>
+                        <a class="apply-btn" href="../our-team-btns/apply-form.html">APPLY NOW</a>
+                    </div>
+                </div>
+
+                <!-- Tab 2: Manager Trainee -->
+                <div class="tab-panel tab-padding" id="manager">
+                    <img src="../our-team-img/Manager.our-team.webp" alt="Manager Image">
+                    <div>
+                        <p>There is no shortage of career opportunities at McDonald's®, and the position of Manager
+                            Trainee can offer you a lot of benefits that will help you climb up the hierarchy of team
+                            leaders. If you would like to coordinate a group of people full of energy, then your place
+                            is definitely here! </p>
+                        <p>You will have the opportunity to demonstrate your organizational skills and propose creative
+                            solutions for various work situations. The knowledge gained from the professional training
+                            classes will accompany you on the road to success.</p>
+                        <a class="apply-btn" href="../our-team-btns/apply-form.html">APPLY NOW</a>
+                    </div>
+                </div>
+
+                <!-- Tab 3: Barista -->
+                <div class="tab-panel" id="barista">
+                    <img src="../our-team-img/Barista.our-team.webp" alt="Barista Image">
+                    <div>
+                        <p>Are you productive in the morning, and the unique aroma of coffee gives you the energy you
+                            need to enjoy every moment of the day?</p>
+                        <p>Then apply for the position of Barista at McCafé® and benefit from a comprehensive
+                            professional training program, a pleasant atmosphere maintained by dynamic colleagues and
+                            many other advantages.</p>
+                        <p>You will have the opportunity to share thousands of smiles with the people around you and
+                            thus develop your communication skills. A good mood is indispensable in restaurants, and the
+                            moments experienced every day with your team can turn into unforgettable memories.
+                        </p>
+                        <a class="apply-btn" href="../our-team-btns/apply-form.html">APPLY NOW</a>
+                    </div>
+                </div>
+
+                <!-- Tab 4: Hospitality Manager -->
+                <div class="tab-panel tab-padding" id="hospitality">
+                    <img src="../our-team-img/MC.Logo.webp" alt="Hospitality Image">
+                    <div>
+                        <p>At McDonald's®, the positive experience of visitors is a priority. If you enjoy constantly
+                            interacting with the people around you, then apply for the position of Guest Experience
+                            Leader (GEL).</p>
+                        <p>Placing orders through the new digital kiosks is a new experience for people who are not
+                            familiar with the technological system implemented in some restaurants. As a GEL you will
+                            have the opportunity to help customers and explain to them what innovation means at
+                            McDonald's®. Thus, you will ensure that their good mood remains intact throughout the visit.
+                        </p>
+                        <a class="apply-btn" href="../our-team-btns/apply-form.html">APPLY NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+
+        <div class="custom-wrapper">
+            <!-- Secțiunea Text -->
+            <div class="custom-text">
+                <h2>And what if it didn't work out for you?</h2>
+                <p>Good things do not come from the first or the second. But at Mec you can learn.</p>
+            </div>
+            <!-- Secțiunea Video -->
+            <div class="custom-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/DlZgmM6Cj1I?si=s9JH8hrKUxDIJmwD"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p class="custom-caption">We believe in the young people of Romania.</p>
+            </div>
+        </div>
+
+    </main>
+</div>
+
+    <!-- our values section -->
+
+    <div class="our-values">
+        <h2>OUR VALUES</h2>
+        <p>Our company is built on a set of values that we hold dear and that define us. They are our growth engine and
+            are reflected in the behavior of our entire team.
+            Always with a smile.</p>
+
+        <!-- Prima linie de valori -->
+        <div class="our-values-1">
+            <div class="value-item">
+                <img src="../our-team-img/ospitalitate.webp" alt="HOSPITALITY">
+                <h3>HOSPITALITY</h3>
+                <p>Our customers and team are at the center of our attention.</p>
+            </div>
+            <div class="value-item">
+                <img src="../our-team-img/diversitate.webp" alt="DIVERSITY">
+                <h3>DIVERSITY</h3>
+                <p>Our doors are open to everyone.</p>
+            </div>
+            <div class="value-item">
+                <img src="../our-team-img/integritate.webp" alt="INTEGRITY">
+                <h3>INTEGRITY</h3>
+                <p>We are consistent and fair. We keep every promise we make.</p>
+            </div>
+        </div>
+
+        <!-- A doua linie de valori -->
+        <div class="our-values-2">
+            <div class="value-item">
+                <img src="../our-team-img/comunitate.webp" alt="COMMUNITY">
+                <h3>COMMUNITY</h3>
+                <p>We are actively involved in the communities we are part of.</p>
+            </div>
+            <div class="value-item">
+                <img src="../our-team-img/familie.webp" alt="FAMILY">
+                <h3>FAMILY</h3>
+                <p>We trust each other. And we are more than a team.</p>
+            </div>
+        </div>
+
+        <a class="apply-btn" href="../our-team-btns/values-btn.html">Learn more</a>
+    </div>
+
+    <!-- FQA section -->
+    <div class="FAQ-section">
+        <h2 class=" FQA-title">FAQ</h2>
+        <p class="FQA-subtitle">Confused about working at McDonald's®? What does it entail or if you qualify?</p>
+
+
+        <div class="accordion accordion-flush" id="accordionFlushExample1">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne-1" aria-expanded="false" aria-controls="flush-collapseOne-1">
+                        Do I have to be of age to apply?
+                    </button>
+                </h2>
+                <div id="flush-collapseOne-1" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample1">
+                    <div class="accordion-body">From a legal point of view, you can be employed from the age of 16. Many
+                        young people want to earn money on their own and no longer depend on the help of their parents
+                        for any expenses. We encourage them to start working and we are always open to offer
+                        opportunities to those interested. In order to engage, however, you need your parents' consent.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo-1" aria-expanded="false" aria-controls="flush-collapseTwo-1">
+                        Can I apply for several positions at once?
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo-1" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample1">
+                    <div class="accordion-body">Yes, you can apply for several different positions at the same time, but
+                        we will consider your requirements one at a time. We recommend that you read our job
+                        descriptions to help you decide which career path you want to pursue.</div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree-1" aria-expanded="false"
+                        aria-controls="flush-collapseThree-1">
+                        How should I dress for the interview?
+                    </button>
+                </h2>
+                <div id="flush-collapseThree-1" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample1">
+                    <div class="accordion-body">Our recommendation is the smart casual outfit. For example, a
+                        warm-colored T-shirt and dark-colored pants or skirt.</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample2">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne-2" aria-expanded="false" aria-controls="flush-collapseOne-2">
+                        What documents are required for employment?
+                    </button>
+                </h2>
+                <div id="flush-collapseOne-2" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample2">
+                    <div class="accordion-body">At the end of the recruitment process, if you have been selected for
+                        employment, you will receive a list of all the necessary documents in order to continue and
+                        complete the recruitment process.</div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo-2" aria-expanded="false" aria-controls="flush-collapseTwo-2">
+                        What types of shifts will I work?
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo-2" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample2">
+                    <div class="accordion-body">Our restaurants operate within various time slots, up to 24 hours a day.
+                        For example, a morning shift can start at 6 o'clock.
+                        All our employees work in shifts, by rotation, which also means working the night shift (if you
+                        are over 18). The tours are designed to be to your advantage while taking into account the
+                        legislation in force.</div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree-2" aria-expanded="false"
+                        aria-controls="flush-collapseThree-2">
+                        After how long can you be promoted at McDonald's®? And is there any difference in salary?
+                    </button>
+                </h2>
+                <div id="flush-collapseThree-2" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample2">
+                    <div class="accordion-body">At McDonald's® we place great emphasis on people development.
+                        Employees may advance based on on-the-job performance and demonstrated commitment by responsibly completing all position-related training programs.
+                        The salary package will be different depending on the position, according to the salary scale existing at that time.</div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    </div>
+
+
+    <!-- Footer section -->
+
+    <footer>
+        <div class="footer-section">
+            <!-- About Us Section -->
+            <div class="footer-column about-us-column">
+                <p class="lead-title">About us</p>
+                <a href="../footer-content-html/about-us.html">About us</a>
+                <a href="../footer-content-html/about-the-company.html">About the company</a>
+                <a href="../footer-content-html/the-ray-kroc-story.html">The Ray Kroc Story</a>
+                <a href="../footer-content-html/charity.html">Charity</a>
+            </div>
+    
+            <!-- Restaurants Section -->
+            <div class="footer-column restaurants-column">
+                <p class="lead-title">Restaurants</p>
+                <a href="../footer-content-html/restaurants.html">Restaurants</a>
+            </div>
+    
+            <!-- Career Section -->
+            <div class="footer-column contact-column">
+                <p class="lead-title">Career</p>
+                <a href="../nav-items/our-team.html">Career</a>
+            </div>
+    
+            <!-- Useful Links Section -->
+            <div class="footer-column useful-links-column">
+                <p class="lead-title">Useful Links</p>
+                <a href="../footer-content-html/terms-and-conditions.html">Terms and Conditions</a>
+                <a href="../footer-content-html/privacy-policy.html">Privacy Policy</a>
+                <a href="../footer-content-html/cctv.html">CCTV</a>
+                <a href="https://anpc.ro/" target="_blank">Consumer Protection</a>
+                <a href="https://mcdonalds.ro/sites/default/files/2024-05/Program%20PREMIER%20RESTAURANTS_f.pdf">Waste Prevention</a>
+                <a href="https://mcdonalds.ro/sites/default/files/2024-11/Gramaje%20Ingrediente%20Alergeni%20Nutritie%20-%20nov%202024.pdf">Weights & Allergens</a>
+                <a href="https://mcdonalds.ro/sites/default/files/2024-11/Centralizare%20autorizatii%20ANPC-2024.pdf">Authorizations and Notices</a>
+                <a href="tel:#">Consumer Hotline: 021-9551</a>
+            </div>
+    
+            <!-- Social Media Section -->
+            <div class="footer-column social-media-column">
+                <p class="lead-title">Follow Us</p>
+                <a href="https://www.facebook.com/McDonalds.ro/" target="_blank">
+                    <img src="../social-media-img/facebook-icon.png" alt="Facebook">
+                </a>
+                <a href="https://www.youtube.com/user/McDonaldsRomania" target="_blank">
+                    <img src="../social-media-img/youtube-icon.png" alt="YouTube">
+                </a>
+                <a href="https://www.instagram.com/mcdonalds_ro/" target="_blank">
+                    <img src="../social-media-img/instagram-icon.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- javascript for bootstrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+    <!-- javascript for employees navigation -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const tabLinks = document.querySelectorAll(".tab-link");
+            const tabPanels = document.querySelectorAll(".tab-panel");
+
+            tabLinks.forEach((tab) => {
+                tab.addEventListener("click", () => {
+                    // Remove "active" from all tabs and panels
+                    tabLinks.forEach((link) => link.classList.remove("active"));
+                    tabPanels.forEach((panel) => panel.classList.remove("active"));
+
+                    // Add "active" to the current tab and panel
+                    tab.classList.add("active");
+                    const tabId = tab.getAttribute("data-tab");
+                    document.getElementById(tabId).classList.add("active");
+                });
+            });
+        });
+    </script>
+
+<!-- javascript for dropdown menu -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const dropdownToggle = document.querySelector('.dropdown-toggle');
+      const dropdownMenu = document.querySelector('.dropdown-menu');
+  
+      // Toggle pentru afișarea meniului
+      dropdownToggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+      });
+  
+      // Ascunde meniul când se face click în afara lui
+      document.addEventListener('click', (e) => {
+        if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+          dropdownMenu.style.display = 'none';
+        }
+      });
+    });
+  </script>
+  
+  
+
+<!-- javascript pentru navigatie -->
+<script>
+    function toggleMenu() {
+      const menu = document.querySelector('nav ul');
+      menu.classList.toggle('active');
+    }
+    </script>
+
+</body>
+
+</html>

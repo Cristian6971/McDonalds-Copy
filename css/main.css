@@ -1,0 +1,311 @@
+:root {
+    --bg-primary: #ffbc0d;
+    --bg-secondary: #155330;
+    --bg-grey: #f7f7f7;
+
+    --text-primary: #ffbc0d;
+    --text-secondary: #155330;
+    --text-dark: #000;
+    --text-light: aliceblue;
+
+    --spacing-xl: 4rem;
+    --spacing-large: 2rem;
+    --spacing-medium: 1rem;
+    --spacing-small: 0.5rem;
+    --spacing-xs: 0.25rem;
+
+    --fs-large: 1rem;
+    --fs-medium: 0.875rem;
+    --fs-small: 0.75rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+input[type="submit"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    opacity: 1;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}
+
+/* Navigation section */
+
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav .navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  nav .logo-link img {
+    height: 60px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin-left: 30px;
+    position: relative; /* Pentru poziționarea dropdown-ului */
+  }
+  
+  nav a {
+    font-size: 16px;
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #ffcc00;
+  }
+  
+  /* Dropdown specific styles */
+  nav .dropdown-menu {
+    display: none; /* Ascunde meniul */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    z-index: 100;
+    border: 1px solid #ddd;
+    width: 200px;
+  }
+  
+  nav .dropdown-menu li {
+    margin: 0;
+  }
+  
+  nav .dropdown-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+  }
+  
+  nav .dropdown-menu a:hover {
+    background-color: #ffcc00;
+    color: white;
+  }
+  
+  /* Arată meniul la hover */
+  nav .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  
+/* Footer section */
+
+footer {
+    color: #fff;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border-top: solid 1px #d3d3d3;
+}
+
+.footer-column {
+    width: 22%;
+    margin-bottom: 20px;
+}
+
+.lead-title {
+    color: var(--text-primary);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-column a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    margin: 5px 0;
+    transition: color 0.3s;
+}
+
+.footer-column a:hover {
+    color: var(--text-secondary);
+    text-decoration: underline;
+}
+
+.social-media-column a {
+    margin-right: 10px;
+    display: inline;
+}
+
+.social-media-column img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+}
+
+.social-media-column img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+          nav .navigation {
+          flex-direction: column; /* Aranjează meniul pe verticală */
+          align-items: flex-start;
+        }
+      
+        nav ul {
+          display: none; /* Ascunde meniul */
+          flex-direction: column;
+          width: 100%; /* Lățime completă */
+          padding: 0;
+          margin: 0;
+          background-color: white;
+        }
+      
+        nav ul.active {
+          display: flex; /* Afișează meniul când e activ */
+        }
+      
+        nav li {
+          margin: 10px 0; /* Spațiere între iteme */
+          width: 100%;
+        }
+      
+        nav .hamburger {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          cursor: pointer;
+          width: 30px;
+          height: 25px;
+          margin-left: auto; /* Aliniază la dreapta */
+        }
+      
+        nav .hamburger span {
+          background: #000;
+          height: 3px;
+          width: 100%;
+          border-radius: 5px;
+        }
+
+        nav .navigation {
+            flex-direction: column; /* Aranjează totul pe verticală */
+            align-items: center; /* Centrează conținutul */
+          }
+        
+          .logo-link {
+            display: flex;
+            justify-content: center; /* Centrează logoul pe orizontală */
+            align-items: center; /* Centrează logoul pe verticală */
+            width: 100%; /* Opțional, dacă vrei logoul să fie aliniat central complet */
+          }
+        
+          .logo-link img {
+            height: 60px; /* Asigură-te că imaginea logoului are dimensiunea dorită */
+          }
+
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 0.5rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+    .footer-section {
+        padding: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .margin-top-div{
+      padding-top: 100px;
+    }
+
+}
+
